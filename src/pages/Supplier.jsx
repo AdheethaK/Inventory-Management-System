@@ -8,7 +8,6 @@ const Supplier = () => {
   return (
     <div className='flex flex-row gap-2 w-64' style={{ width : '1420px' ,  height : '640px' }}>
       <div className='bg-purple-500 basis-1/3' >01</div>
-        <SimpleParallax>
             <div className='bg-white basis-2/3 p-2 overflow-x-auto scroll-smooth' >
                 <div class="relative shadow-md sm:rounded-lg" >
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -257,7 +256,6 @@ const Supplier = () => {
                     </table>
                 </div>
             </div>
-        </SimpleParallax>
     </div>
   )
 }
