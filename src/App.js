@@ -12,14 +12,14 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <div className='flex relative dark:bg-main-dark-bg' >
+      <div className='flex relative dark:bg-main-dark-bg ' >
         <div className='fixed right-4 bottom-4' style={{ zIndex : '1000' }} >
 
           {/* The Tooltip  */}
           <TooltipComponent content="Settings" position='top' >
             <button type="button" 
               className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-black'
-              style={{ backgroundImage : 'linear-gradient( #94E58E, #88E3FF , #94E58E )' , borderRadius : '50%' ,  border : '1px solid #2E2328' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+              style={{ backgroundImage : 'linear-gradient( #94E58E, #88E3FF , #94E58E )' , borderRadius : '50%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
               <FiSettings />
             </button>
           </TooltipComponent>

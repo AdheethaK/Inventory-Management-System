@@ -6,12 +6,12 @@ import SimpleParallax from 'simple-parallax-js';
 
 const Supplier = () => {
   return (
-    <div className='flex flex-row gap-2 w-64' style={{ width : '1420px' ,  height : '640px' }}>
+    <div className='flex flex-row gap-2 w-64 scroll-smooth transition ease-in' style={{ width : '1300px' ,  height : '640px' }}>
       <div className='bg-purple-500 basis-1/3' >01</div>
-            <div className='bg-white basis-2/3 p-2 overflow-x-auto scroll-smooth' >
+            <div className='bg-white basis-2/3 p-2 overflow-x-auto scroll-smooth' style={{ scrollbarWidth : '10px' }} >
                 <div class="relative shadow-md sm:rounded-lg" >
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     Product name
