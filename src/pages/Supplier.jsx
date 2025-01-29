@@ -2,13 +2,34 @@ import React from 'react';
 
 import SimpleParallax from 'simple-parallax-js';
 
+import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier.png';
+
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet"></link>
 
 const Supplier = () => {
   return (
-    <div className='flex flex-row gap-2 w-64 scroll-smooth transition ease-in' style={{ width : '1300px' ,  height : '640px' }}>
-      <div className='bg-purple-500 basis-1/3' >01</div>
-            <div className='bg-white basis-2/3 p-2 overflow-x-auto scroll-smooth' style={{ scrollbarWidth : '10px' }} >
+    <div className='flex flex-row gap-1 w-64 scroll-smooth transition ease-in' style={{ width : '1300px' ,  height : '640px' }}>
+      
+      {/* The Supplier Form */}
+      <div className='bg-purple-500 basis-1/3 grid grid-cols-8 gap-1' >
+        <div className='col-start-1 col-span-7 bg-yellow-300 grid grid-rows-12 gap-1' >
+
+            {/* The Supplier Title */}
+            <div className='row-start-1 row-span-1 bg-red-500 grid grid-cols-12 gap-1 relative'>
+                <div className='col-start-1 col-span-1 bg-purple-300 rounded-md w-3/4' ></div>
+                <p className='col-start-2 col-span-9 bg-green-400 align-middle text-3xl absolute font-bold' 
+                style={{ top : '6px' , bottom : '0px' }}
+                    >SUPPLIER</p>
+                {/* <div className='col-start-11 col-span-2 bg-purple-300 w-full' ></div> */}
+                <img src={supplier_img} className='col-start-11 col-span-2 bg-purple-300 w-11 h-auto left-0 right-0 m-auto hover:bg-slate-100 rounded-md' />
+            </div>
+            <div className='row-start-2 row-span-11 bg-red-500 overflow-x-auto scroll-smooth'></div>
+        </div>
+        <div className='col-start-8 bg-yellow-300' ></div>
+      </div>     
+
+      {/* The Supplier Table  */}
+      <div className='bg-white basis-2/3 p-1 overflow-x-auto scroll-smooth' style={{ scrollbarWidth : '10px' }} >
                 <div class="relative shadow-md sm:rounded-lg" >
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
@@ -255,7 +276,7 @@ const Supplier = () => {
                         </tbody>
                     </table>
                 </div>
-            </div>
+      </div>
     </div>
   )
 }
