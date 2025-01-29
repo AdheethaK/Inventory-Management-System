@@ -35,7 +35,7 @@ const App = () => {
         </div>
 
         {/* The Navigation Bar */}
-        <div className={'dark:bg-main-bg bg-main-bg min-h-screen overflow-hidden absolute left-24 flex-2'} style={{background : 'gray' , width : '1300px'}} >
+        <div className={'dark:bg-main-bg bg-main-bg min-h-screen overflow-hidden absolute left-24 flex-2'} style={{background : 'white' , width : '1300px'}} >
             <div className='fixed bg-main-bg dark:bg-main-dark-bg navbar w-full' style={{background : 'white'}} >
               <Navbar />
             </div>
