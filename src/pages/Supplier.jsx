@@ -4,15 +4,22 @@ import SimpleParallax from 'simple-parallax-js';
 
 import { HiInformationCircle } from "react-icons/hi2";
 import { TbTruckDelivery } from "react-icons/tb";
+import { MdAdd } from "react-icons/md";
+import { IoSearchSharp } from "react-icons/io5";
+import { IoBookmarksOutline } from "react-icons/io5";
+import { TiTick } from "react-icons/ti";
+import { TbReload } from "react-icons/tb";
+import { RiDeleteBin5Line } from "react-icons/ri";
 
 import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier2.png';
 import information_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/information2.png';
-import location_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/location1.png';
-import category_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/category1.png';
+import location_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/location3.png';
+import category_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/category2.png';
 import payment_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/payment2.png';
 import agreement_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/agreement1.png';
 import rating_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/rating1.png';
 import notes_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/notes1.png';
+import save_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/save1.png';
 
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet"></link>
 
@@ -141,7 +148,7 @@ const Supplier = () => {
                             {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
                                 <HiInformationCircle />
                             </div> */}
-                            <img src={location_logo} className='w-7 h-7 inline-block' />
+                            <img src={location_logo} className='w-8 h-8 inline-block' />
                             <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>ADDRESSS & LOCATION</p>
                     </div>
 
@@ -194,7 +201,7 @@ const Supplier = () => {
                             {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
                                 <HiInformationCircle />
                             </div> */}
-                            <img src={category_logo} className='w-7 h-7 inline-block' />
+                            <img src={category_logo} className='w-5 h-5 inline-block' />
                             <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>TYPE & CATEGORY</p>
                     </div>
 
@@ -236,7 +243,7 @@ const Supplier = () => {
                             {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
                                 <HiInformationCircle />
                             </div> */}
-                            <img src={payment_logo} className='w-6 h-6 inline-block' />
+                            <img src={payment_logo} className='w-5 h-5 inline-block' />
                             <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>FINANCIAL & PAYMENT DETAILS</p>
                     </div>
 
@@ -311,7 +318,7 @@ const Supplier = () => {
                             {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
                                 <HiInformationCircle />
                             </div> */}
-                            <img src={agreement_logo} className='w-7 h-7 inline-block' />
+                            <img src={agreement_logo} className='w-6 h-7 inline-block' />
                             <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>BUSINESS AGREEMENTS & COMPLIANCES</p>
                     </div>
 
@@ -454,7 +461,8 @@ const Supplier = () => {
                                 </label>
                                 </div>
                                 <div class="md:w-2/3">
-                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" />
+                                    <textarea  rows="6"  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" ></textarea>
+                                    {/* <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" /> */}
                                 </div>
                             </div>
                             {/* 02. Attachments*/}
@@ -473,24 +481,68 @@ const Supplier = () => {
                     </div>
                 </div>
 
-                {/* <form class="max-w-sm mx-auto">
-                <div class="mb-5">
-                    <label for="username-success" class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Your name</label>
-                    <input type="text" id="username-success" class="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500" placeholder="Bonnie Green" />
-                    <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium">Alright!</span> Username available!</p>
-                </div>
-                <div>
-                    <label for="username-error" class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Your name</label>
-                    <input type="text" id="username-error" class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500" placeholder="Bonnie Green" />
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span> Username already taken!</p>
-                </div>
-                </form> */}
             </div>
         </div>
 
         {/* Button Section */}
-        <div className='col-start-8 bg-yellow-300 fixed h-64 w-12' style={{ left : '470px' , top : '400px' }}>     
+        <div className='col-start-8 fixed h-64 w-12 grid grid-rows-5 gap-2' style={{ left : '470px' , top : '400px' }}>     
             
+            {/* Add New ID */}
+            <div data-tooltip-target="tooltip-light-newId" data-tooltip-style="light" data-tooltip-placement="right" className='h-10 row-start-1 row-span-1 cursor-pointer hover:shadow-lg' style={{ backgroundColor : 'lightblue' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <MdAdd />
+                </div>
+            </div>
+            {/* Tooltip for Add New ID */}
+            <div id="tooltip-light-newId" role="tooltip" class=" w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Add New ID
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            {/* Search */}
+            <div data-tooltip-target="tooltip-light-search" data-tooltip-style="light" data-tooltip-placement="right" className='h-10 row-start-2 row-span-1 cursor-pointer' style={{ backgroundColor : 'yellow' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <IoSearchSharp />
+                </div>
+            </div>
+            {/* Tooltip for Search */}
+            <div id="tooltip-light-search" role="tooltip" class=" w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Search
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            {/* Save */}
+            <div data-tooltip-target="tooltip-light-save" data-tooltip-style="light" data-tooltip-placement="right" className='h-10 row-start-3 row-span-1 cursor-pointer' style={{ backgroundColor : '#80FF84' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                < div className='w-5 h-6 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <TiTick />
+                </div>
+                {/* <img src={save_logo} className='col-start-11 col-span-2 w-10 h-auto left-0 right-0 m-auto hover:bg-slate-100 rounded-md' /> */}
+            </div>
+            {/* Tooltip for Save */}
+            <div id="tooltip-light-save" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Save
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            {/* Update */}
+            <div data-tooltip-target="tooltip-light-update" data-tooltip-style="light" data-tooltip-placement="right" className='h-10 row-start-4 row-span-1 cursor-pointer' style={{ backgroundColor : 'plum' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pt-2 inline-block text-2xl' style={{ color : '#2E2328' ,paddingLeft : '11px' }}>
+                    <TbReload />
+                </div>
+            </div>
+            {/* Tooltip for Update */}
+            <div id="tooltip-light-update" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Update
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            {/* Delete */}
+            <div data-tooltip-target="tooltip-light-delete" data-tooltip-style="light" data-tooltip-placement="right" className='h-10 row-start-5 row-span-1 cursor-pointer' style={{ backgroundColor : 'red' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <RiDeleteBin5Line />
+                </div>
+            </div>
+            {/* Tooltip for Delete */}
+            <div id="tooltip-light-delete" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Delete
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
         </div>
       </div>     
 
