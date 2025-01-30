@@ -2,7 +2,17 @@ import React from 'react';
 
 import SimpleParallax from 'simple-parallax-js';
 
-import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier.png';
+import { HiInformationCircle } from "react-icons/hi2";
+import { TbTruckDelivery } from "react-icons/tb";
+
+import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier2.png';
+import information_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/information2.png';
+import location_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/location1.png';
+import category_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/category1.png';
+import payment_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/payment2.png';
+import agreement_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/agreement1.png';
+import rating_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/rating1.png';
+import notes_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/notes1.png';
 
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet"></link>
 
@@ -11,33 +21,40 @@ const Supplier = () => {
     <div className='flex flex-row gap-1 w-64' style={{ width : '1300px' ,  height : '640px' }}>
       
       {/* The Supplier Form */}
-      <div className=' basis-1/3 grid grid-cols-8 gap-1 overflow-x-auto scroll-smooth relative' >
+      <div className=' basis-1/3 grid grid-cols-8 gap-0 overflow-x-auto scroll-smooth relative' >
         <div className='col-start-1 col-span-7 relative' >
 
         {/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */}
 
             {/* The Supplier Title */}
             <div className=' grid grid-cols-12 gap-1 h-12 fixed bg-white w-96 pb-5' style={{ zIndex : '1000' }}>
-                <div className='col-start-1 col-span-1 bg-purple-200 rounded-md w-3/4' ></div>
+                <div className='col-start-1 col-span-1 bg-purple-200 rounded-md w-6 h-12' ></div>
                 <p className='col-start-2 col-span-9 align-middle text-3xl absolute font-bold' 
                 style={{ top : '6px' , bottom : '0px' }}
                     >SUPPLIER</p>
-                {/* <div className='col-start-11 col-span-2 bg-purple-300 w-full' ></div> */}
-                <img src={supplier_img} className='col-start-11 col-span-2 w-11 h-auto left-0 right-0 m-auto hover:bg-slate-100 rounded-md' />
+                {/* <div className='col-start-11 col-span-2 w-11 h-auto text-3xl left-0 right-0 m-auto hover:bg-slate-100 rounded-md' ><TbTruckDelivery /></div> */}
+                <img src={supplier_img} className='col-start-11 col-span-2 w-10 h-auto left-0 right-0 m-auto hover:bg-slate-100 rounded-md' />
             </div>
 
             {/* The Supplier Form Body */}
-            <div className='grid grid-rows-7 gap-1 overflow-x-auto scroll-smooth relative top-12'>
+            <div className='overflow-x-auto scroll-smooth relative top-12'>
 
-                <div className='row-start-1 row-span-1 p-2 pb-0 overflow-x-auto scroll-smooth'>
-                    <p className='text-md font-extralight text-gray-600 pb-2'>BASIC INFORMATION</p>
+                {/* Basic Information */}
+                <div className='pb-0'>
+                    <div className='flex items-center pl-5' >
+                        {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                            <HiInformationCircle />
+                        </div> */}
+                        <img src={information_logo} className='w-7 h-7 inline-block' />
+                        <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>BASIC INFORMATION</p>
+                    </div>
                     <div className=' w-full pl-1'>
 
                     <form class="w-full max-w-sm h-auto ">
                         {/* Supplier Id */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                            <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Supplier Id
                             </label>
                             </div>
@@ -48,7 +65,7 @@ const Supplier = () => {
                         {/* Supplier Name */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Supplier Name
                                 </label>
                             </div>
@@ -59,7 +76,7 @@ const Supplier = () => {
                         {/* Company Name */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name" placeholder="Enter Supplier Id">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name" placeholder="Enter Supplier Id">
                                     Company Name
                                 </label>
                             </div>
@@ -70,7 +87,7 @@ const Supplier = () => {
                         {/* Contact Person Name */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Contact Person Name
                                 </label>
                             </div>
@@ -81,7 +98,7 @@ const Supplier = () => {
                         {/* Phone Number */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Phone Number
                                 </label>
                             </div>
@@ -92,7 +109,7 @@ const Supplier = () => {
                         {/* Email Address */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Email Address
                                 </label>
                             </div>
@@ -115,106 +132,345 @@ const Supplier = () => {
                            
                     </div>
                 </div>
-                <div className='row-start-2 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-extralight text-gray-600'>ADDRESSS & LOCATION</p>
-                    <div className='bg-yellow-200 w-full pl-1'>
+
+                {/* Address & Location */}
+                <div className='pb-0'>
+                    
+                    {/* Title */}
+                    <div className='flex items-center pl-5' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={location_logo} className='w-7 h-7 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>ADDRESSS & LOCATION</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
                         
-                    <form class="w-full max-w-sm ">
-                        {/* Supplier Id */}
+                    <form class="w-full max-w-sm h-auto ">
+                        {/* 01. Head Office Address */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                Supplier Id
+                            <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                Head Office Address
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Supplier Id" />
+                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Head Office Address" />
                             </div>
                         </div>
-                        {/* Supplier Name */}
+                        {/* 02. Warehouse/Branch Address */}
                         <div class="md:flex md:items-center mb-6">
                             <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                    Supplier Name
-                                </label>
-                            </div>
-                            <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Supplier Name" />
-                            </div>
-                        </div>
-                        {/* Company Name */}
-                        <div class="md:flex md:items-center mb-6">
-                            <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name" placeholder="Enter Supplier Id">
-                                    Company Name
-                                </label>
-                            </div>
-                            <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Company Name" />
-                            </div>
-                        </div>
-                        {/* Contact Person Name */}
-                        <div class="md:flex md:items-center mb-6">
-                            <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                    Contact Person Name
-                                </label>
-                            </div>
-                            <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Contact Person Name" />
-                            </div>
-                        </div>
-                        {/* Phone Number */}
-                        <div class="md:flex md:items-center mb-6">
-                            <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                    Phone Number
-                                </label>
-                            </div>
-                            <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Phone Number" />
-                            </div>
-                        </div>
-                        {/* Email Address */}
-                        <div class="md:flex md:items-center mb-6">
-                            <div class="md:w-1/3">
-                                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                    Email Address
-                                </label>
-                            </div>
-                            <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Email Address" />
-                            </div>
-                        </div>
-                        {/* Password */}
-                        {/* <div class="md:flex md:items-center mb-6">
-                            <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-password">
-                                Password
+                            <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                Warehouse /Branch Address
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************" />
+                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Warehouse/Branch Address" />
                             </div>
-                        </div> */}
+                        </div>
+                        {/* 03. Country & Region */}
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/3">
+                            <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                Country & Region
+                            </label>
+                            </div>
+                            <div class="md:w-2/3">
+                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Country & Region" />
+                            </div>
+                        </div>
                     </form>
                            
                     </div>
                 </div>
-                <div className='row-start-3 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-semibold text-gray-600'>Type & Category</p>
+
+                {/* Type & Category */}
+                <div className='p-2'>
+
+                    {/* Title */}
+                    <div className='flex items-center pl-4' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={category_logo} className='w-7 h-7 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>TYPE & CATEGORY</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
+                        
+                        <form class="w-full max-w-sm h-auto ">
+                            {/* 01. Supplier Type */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Supplier Type
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Supplier Type" />
+                                </div>
+                            </div>
+                            {/* 02. Product Categories */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Product Categories
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Product Categories" />
+                                </div>
+                            </div>
+                        </form>
+                           
+                    </div>
                 </div>
-                <div className='row-start-4 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-semibold text-gray-600'>Financial & Payment Details</p>
+
+                {/* Financial & Payment Details */}
+                <div className=' p-2'>
+
+                    {/* Title */}
+                    <div className='flex items-center pl-4' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={payment_logo} className='w-6 h-6 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>FINANCIAL & PAYMENT DETAILS</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
+                        
+                        <form class="w-full max-w-sm h-auto ">
+                            {/* 01. Bank Name */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Bank Name
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Bank Name" />
+                                </div>
+                            </div>
+                            {/* 02. Account Number */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Account Number
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Account Number" />
+                                </div>
+                            </div>
+                            {/* 03. Tax Identification Number (ITN) */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Tax Identification Number (ITN)
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Tax Identification Number (ITN)" />
+                                </div>
+                            </div>
+                            {/* 04. Preferred Payment Method */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Preferred Payment Method
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Preferred Payment Method" />
+                                </div>
+                            </div>
+                            {/* 05. Payment Terms */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Payment Terms
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Payment Terms" />
+                                </div>
+                            </div>
+                        </form>
+                           
+                    </div>
                 </div>
-                <div className='row-start-5 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-semibold text-gray-600'>Business Agreements & Compliances</p>
+
+                {/* Business Agreements & Compliances */}
+                <div className='p-2'>
+                    
+                    {/* Title */}
+                    <div className='flex items-center pl-4' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={agreement_logo} className='w-7 h-7 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>BUSINESS AGREEMENTS & COMPLIANCES</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
+                        
+                        <form class="w-full max-w-sm h-auto">
+                            {/* 01. Contract Start */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Contract Start
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Contract Start" />
+                                </div>
+                            </div>
+                            {/* 02. Contract End */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Contract End
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Contract End" />
+                                </div>
+                            </div>
+                            {/* 03. Service Level Agreement (SLA) Details */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Service Level Agreement (SLA) Details
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Service Level Agreement (SLA) Details" />
+                                </div>
+                            </div>
+                            {/* 04. Warranty Policy */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Warranty Policy
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Warranty Policy" />
+                                </div>
+                            </div>
+                            {/* 05. Return & Refund Policy */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Return & Refund Policy
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Return & Refund Policy" />
+                                </div>
+                            </div>
+                        </form>
+                           
+                    </div>
                 </div>
-                <div className='row-start-6 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-semibold text-gray-600'>Performance & Rating</p>
+
+                {/* Performance & Rating */}
+                <div className=' p-2'>
+                    
+                    {/* Title */}
+                    <div className='flex items-center pl-4' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={rating_logo} className='w-7 h-7 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>PERFORMANCE & RATING</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
+                        
+                        <form class="w-full max-w-sm h-auto">
+                            {/* 01. Delivery Lead Time */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Delivery Lead Time
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Delivery Lead Time" />
+                                </div>
+                            </div>
+                            {/* 02. Supplier Rating */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Supplier Rating
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Supplier Rating" />
+                                </div>
+                            </div>
+                            {/* 03. Order History & Fulfillment Rate */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Order History & Fulfillment Rate
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Order History & Fulfillment Rate" />
+                                </div>
+                            </div>
+                        </form>
+                           
+                    </div>
                 </div>
-                <div className='row-start-7 row-span-1 bg-purple-400 p-2'>
-                    <p className='text-md font-semibold text-gray-600'>Additional Notes & Attachments</p>
+
+                {/* Additional Notes & Attachment */}
+                <div className=' p-2'>
+
+                    {/* Title */}
+                    <div className='flex items-center pl-4' >
+                            {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
+                                <HiInformationCircle />
+                            </div> */}
+                            <img src={notes_logo} className='w-7 h-7 inline-block' />
+                            <p className='inline-block text-md font-extralight text-gray-300 pb-2 pl-2 pt-2'>ADDITIONAL NOTES & ATTACHMENTS</p>
+                    </div>
+
+                    <div className='w-full pl-1'>
+                        
+                        <form class="w-full max-w-sm h-auto">
+                            {/* 01. Special Terms & Conditions */}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Special Terms & Conditions
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" />
+                                </div>
+                            </div>
+                            {/* 02. Attachments*/}
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
+                                    Attachments
+                                </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Attachments" />
+                                </div>
+                            </div>
+                        </form>
+                           
+                    </div>
                 </div>
 
                 {/* <form class="max-w-sm mx-auto">
