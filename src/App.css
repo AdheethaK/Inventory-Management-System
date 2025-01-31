@@ -57,3 +57,29 @@
 .e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
   border: none;
 }
+
+.btn:hover {
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.btn::before {
+  border-radius: inherit;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+}
+.btn:hover {
+  transform: translate(0, 0.2em);
+}
+.btn:hover::before {
+  transform: translate3d(0, 0.2em, -0.5em);
+}
+.btn:active {
+  background: whitesmoke;
+  transform: translate(0em, 0.50em);
+}
+.btn:active::before {
+  box-shadow: 0 0 0 2px transparent, 0 0 gray;
+  transform: translate3d(0, 0, -1em);
+}
+
