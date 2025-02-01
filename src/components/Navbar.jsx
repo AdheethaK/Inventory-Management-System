@@ -15,7 +15,7 @@ const Navbar = () => {
       {/* The Greeting Text */}
       <div className='col-start-1 col-span-2 h-3 p-8 relative'>
         <div className=" h-3 p-5 absolute items-center" style={{ width : '450px' , bottom : '0px' , top : '0px' , left : '1px' , margin : 'auto'}}>
-            <p className='text-2xl p-2 absolute top-0 bottom-7 left-0 right-0 m-auto'>Good Morning , James !</p>
+            <p className='text-2xl p-2 absolute top-0 bottom-7 left-0 right-0 m-auto'>Good Morning , James ! 😃</p>
         </div>
       </div>
 
