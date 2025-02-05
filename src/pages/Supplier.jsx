@@ -8,7 +8,7 @@ import { TiTick } from "react-icons/ti";
 import { TbReload } from "react-icons/tb";
 import { RiDeleteBin5Line } from "react-icons/ri";
 
-import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier2.png';
+import supplier_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/supplier3.png';
 import information_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/information2.png';
 import location_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/location3.png';
 import category_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/category2.png';
@@ -46,6 +46,8 @@ const Supplier = () => {
 
                 {/* Basic Information */}
                 <div className='pb-0'>
+
+                    {/* Header */}
                     <div className='flex items-center pl-5' >
                         {/* <div className='w-5 h-5 inline-block text-xl text-gray-500'>
                             <HiInformationCircle />
@@ -55,7 +57,7 @@ const Supplier = () => {
                     </div>
                     <div className=' w-full pl-1'>
 
-                    <form class="w-full max-w-sm h-auto ">
+                    <form class="w-full max-w-sm h-auto">
                         {/* Supplier Id */}
                         <div class="md:flex md:items-center mb-4">
                             <div class="md:w-1/3">
@@ -629,7 +631,89 @@ const Supplier = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                                {/* 01. Basic Information */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>SUP001</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Supplies</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Inc.</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>John Doe</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+1 555-123-4567</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>johndoe@globaltech.com</td>
+                                
+                                {/* 02. Supplier Address & Location */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>123 Tech Street, New York, NY, USA</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>456 Logistics Ave, Los Angeles, CA, USA</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>USA, North America</td>
+                                
+                                {/* 03. Supplier Types & Category */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Manufacturer</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Laptops, Keyboards, Monitors</td>
+
+                                {/* 04. Financial & Payment Details */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Bank of America</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>AC: 9876543210</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>TX123456789</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Wire Transfer</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Net 30 Days</td>
+
+                                {/* 05. business agreements & compliances */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2023-01-01</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2026-01-01</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>99% uptime guarantee for electronic parts</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2-year replacement warranty</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Returns accepted within 30 days for defective items</td>
+
+                                {/* 06. Performance & Rating */}
+                                <td className='px-4 py-2 text-left font-medium border-r-2 border-white border-x-4 '>7-10 business days</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>4.7/5</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>120 completed / 5 pending (96% fulfillment rate)</td>
+
+                                {/* 07. Additional Notes & Attachments */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
+                            </tr>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                                {/* 01. Basic Information */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>SUP001</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Supplies</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Inc.</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>John Doe</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+1 555-123-4567</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>johndoe@globaltech.com</td>
+                                
+                                {/* 02. Supplier Address & Location */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>123 Tech Street, New York, NY, USA</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>456 Logistics Ave, Los Angeles, CA, USA</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>USA, North America</td>
+                                
+                                {/* 03. Supplier Types & Category */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Manufacturer</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Laptops, Keyboards, Monitors</td>
+
+                                {/* 04. Financial & Payment Details */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Bank of America</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>AC: 9876543210</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>TX123456789</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Wire Transfer</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Net 30 Days</td>
+
+                                {/* 05. business agreements & compliances */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2023-01-01</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2026-01-01</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>99% uptime guarantee for electronic parts</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2-year replacement warranty</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Returns accepted within 30 days for defective items</td>
+
+                                {/* 06. Performance & Rating */}
+                                <td className='px-4 py-2 text-left font-medium border-r-2 border-white border-x-4 '>7-10 business days</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>4.7/5</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>120 completed / 5 pending (96% fulfillment rate)</td>
+
+                                {/* 07. Additional Notes & Attachments */}
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Priority support for bulk orders</td>
+                                <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Supplier contract, compliance certificates</td>
+                            </tr>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -670,7 +754,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -711,7 +795,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -752,7 +836,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -793,7 +877,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -834,7 +918,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -875,7 +959,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -916,154 +1000,14 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
-                                {/* 01. Basic Information */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Inc.</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>John Doe</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>+1 555-123-4567</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>johndoe@globaltech.com</td>
-                                
-                                {/* 02. Supplier Address & Location */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>123 Tech Street, New York, NY, USA</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>456 Logistics Ave, Los Angeles, CA, USA</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>USA, North America</td>
-                                
-                                {/* 03. Supplier Types & Category */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Manufacturer</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Laptops, Keyboards, Monitors</td>
-
-                                {/* 04. Financial & Payment Details */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Bank of America</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>AC: 9876543210</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>TX123456789</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Wire Transfer</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Net 30 Days</td>
-
-                                {/* 05. business agreements & compliances */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2023-01-01</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2026-01-01</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>99% uptime guarantee for electronic parts</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2-year replacement warranty</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Returns accepted within 30 days for defective items</td>
-
-                                {/* 06. Performance & Rating */}
-                                <td className='px-4 py-2 text-left font-medium border-r-2 border-white border-x-4 '>7-10 business days</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>4.7/5</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>120 completed / 5 pending (96% fulfillment rate)</td>
-
-                                {/* 07. Additional Notes & Attachments */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
-                            </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200' style={{ fontSize : '12px' , lineHeight : '14px' }}>
-                                {/* 01. Basic Information */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Inc.</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>John Doe</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>+1 555-123-4567</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>johndoe@globaltech.com</td>
-                                
-                                {/* 02. Supplier Address & Location */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>123 Tech Street, New York, NY, USA</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>456 Logistics Ave, Los Angeles, CA, USA</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>USA, North America</td>
-                                
-                                {/* 03. Supplier Types & Category */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Manufacturer</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Laptops, Keyboards, Monitors</td>
-
-                                {/* 04. Financial & Payment Details */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Bank of America</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>AC: 9876543210</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>TX123456789</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Wire Transfer</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Net 30 Days</td>
-
-                                {/* 05. business agreements & compliances */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2023-01-01</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2026-01-01</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>99% uptime guarantee for electronic parts</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>2-year replacement warranty</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Returns accepted within 30 days for defective items</td>
-
-                                {/* 06. Performance & Rating */}
-                                <td className='px-4 py-2 text-left font-medium border-r-2 border-white border-x-4 '>7-10 business days</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>4.7/5</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>120 completed / 5 pending (96% fulfillment rate)</td>
-
-                                {/* 07. Additional Notes & Attachments */}
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
-                                <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
-                            </tr>
+                            {/* I don't know ? Use the @synfution tooltip :( */}
+                            {/* Tooltip for Add New ID */}
+                            <div id="tooltip-table-row" role="tooltip" class=" w-20 absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                                SUP001
+                                <div class="tooltip-arrow" data-popper-arrow></div>
+                            </div>
                         </tbody>
                     </table>
-{/* 
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">  
-                        <tbody>
-                            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol Header
-                                </th>
-                                <td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    S001
-                                </td>
-                                <td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Kamani Kuruppu
-                                </td>
-                                <td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    IKEA
-                                </td>
-                                < td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol 04
-                                </td>
-                                < td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol 05
-                                </td>
-                                < td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol 06
-                                </td>
-                                < td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol 07
-                                </td> */}
-                                {/* < td scope="row" class="bg-yellow-300 border-white border-x-4 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    subcol 07
-                                </td> */}
-                                {/* <td class="px-6 py-4">
-                                    Silver
-                                </td>
-                                <td class="px-6 py-4">
-                                    Laptop
-                                </td>
-                                <td class="px-6 py-4">
-                                    $2999
-                                </td>
-                                <td class="px-6 py-4">
-                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                </td>
-                            </tr>
-                            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Microsoft Surface Pro
-                                </th>
-                                <td class="px-6 py-4">
-                                    White
-                                </td>
-                                <td class="px-6 py-4">
-                                    Laptop PC
-                                </td>
-                                <td class="px-6 py-4">
-                                    $1999
-                                </td>
-                                <td class="px-6 py-4">
-                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                </td>
-                            </tr>
-                            
-                        </tbody>
-                    </table> */}
                 </div>
       </div>
     </div>
