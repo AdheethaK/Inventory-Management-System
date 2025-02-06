@@ -1,5 +1,11 @@
 import React from 'react'
 
+import { MdAdd } from "react-icons/md";
+import { IoSearchSharp } from "react-icons/io5";
+import { TiTick } from "react-icons/ti";
+import { TbReload } from "react-icons/tb";
+import { RiDeleteBin5Line } from "react-icons/ri";
+
 import employee_img from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/employee1.png';
 import information_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/information2.png';
 import responsibility_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/src/data/responsibility6.png';
@@ -260,7 +266,7 @@ const Employee = () => {
                               </label>
                             </div>
                             <div class="md:w-1/6">
-                              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
                             </div>
                         </div>
                         {/* 02. Loss / Damage Policy Acknowledged ?  */}
@@ -271,7 +277,7 @@ const Employee = () => {
                               </label>
                             </div>
                             <div class="md:w-1/6">
-                              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
                             </div>
                         </div>
                         {/* 03. Remarks / Special Notes */}
@@ -282,7 +288,7 @@ const Employee = () => {
                                 </label>
                                 </div>
                                 <div class="md:w-2/3">
-                                    <textarea  rows="6"  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Remarks / Special Notes" ></textarea>
+                                    <textarea  rows="6"  class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Remarks / Special Notes" ></textarea>
                                     <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Remarks / Special Notes error label</p>
                                     {/* <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" /> */}
                                 </div>
@@ -306,11 +312,11 @@ const Employee = () => {
                           <div class="md:flex md:items-center mb-4">
                               <div class="md:w-1/3">
                                 <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
-                                    Attachemnts
+                                    Attachments
                                 </label>
                               </div>
                               <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Attachments" />
+                                <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Attachments" />
                                 <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Attachments error label</p>
                               </div>
                           </div>
@@ -322,7 +328,7 @@ const Employee = () => {
                                 </label>
                               </div>
                               <div class="md:w-2/3">
-                                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Last Updated By" />
+                                <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Last Updated By" />
                                 <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Last Updated By error label</p>
                               </div>
                           </div>
@@ -335,7 +341,66 @@ const Employee = () => {
         </div>
 
         {/* Button Section */}
-        <div></div>
+        <div className='col-start-8 fixed h-64 w-12 grid grid-rows-5 gap-2' style={{ left : '470px' , top : '400px' }}>
+
+            {/* Add New ID */}
+            <div id='supplier-btn-new-id' onClick={()=> alert("Hello I am add-new-id-btn :)")} data-tooltip-target="tooltip-light-newId" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-1 row-span-1 cursor-pointer hover:shadow-lg' style={{ backgroundColor : 'lightblue' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <MdAdd />
+                </div>
+            </div>
+            {/* Tooltip for Add New ID */}
+            {/* <div id="tooltip-light-newId" role="tooltip" class=" w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Add New ID
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div> */}
+            {/* Search */}
+            <div data-tooltip-target="tooltip-light-search" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-2 row-span-1 cursor-pointer' style={{ backgroundColor : 'yellow' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <IoSearchSharp />
+                </div>
+            </div>
+            {/* Tooltip for Search */}
+            {/* <div id="tooltip-light-search" role="tooltip" class=" w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Search
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div> */}
+            {/* Save */}
+            <div data-tooltip-target="tooltip-light-save" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-3 row-span-1 cursor-pointer' style={{ backgroundColor : '#80FF84' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                < div className='w-5 h-6 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <TiTick />
+                </div>
+                {/* <img src={save_logo} className='col-start-11 col-span-2 w-10 h-auto left-0 right-0 m-auto hover:bg-slate-100 rounded-md' /> */}
+            </div>
+            {/* Tooltip for Save */}
+            {/* <div id="tooltip-light-save" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Save
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div> */}
+            {/* Update */}
+            <div data-tooltip-target="tooltip-light-update" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-4 row-span-1 cursor-pointer' style={{ backgroundColor : 'plum' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pt-2 inline-block text-2xl' style={{ color : '#2E2328' ,paddingLeft : '11px' }}>
+                    <TbReload />
+                </div>
+            </div>
+            {/* Tooltip for Update */}
+            {/* <div id="tooltip-light-update" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Update
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div> */}
+            {/* Delete */}
+            <div data-tooltip-target="tooltip-light-delete" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-5 row-span-1 cursor-pointer' style={{ backgroundColor : 'red' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
+                <div className='w-10 h-10 pl-2 pt-1 inline-block text-3xl' style={{ color : '#2E2328' }}>
+                    <RiDeleteBin5Line />
+                </div>
+            </div>
+            {/* Tooltip for Delete */}
+            {/* <div id="tooltip-light-delete" role="tooltip" class="w-20 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip">
+                Delete
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div> */}
+
+        </div>
 
       </div>
 
