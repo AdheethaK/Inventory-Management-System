@@ -577,7 +577,7 @@ const Supplier = () => {
                 <div class="relative shadow-md sm:rounded-lg" >
 
                     <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400' >
-                        <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 border-white' >
+                        <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-white' >
                             <tr>
                                 <th colSpan='6' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Basic Information</th>
                                 <th colSpan='3' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Supplier Address & Location</th>
@@ -631,7 +631,7 @@ const Supplier = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            < tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Supplies</td>
@@ -672,7 +672,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Global Tech Supplies</td>
@@ -713,7 +713,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -754,7 +754,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -795,7 +795,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -836,7 +836,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -877,7 +877,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -918,7 +918,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>
@@ -959,7 +959,7 @@ const Supplier = () => {
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Priority support for bulk orders</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Supplier contract, compliance certificates</td>
                             </tr>
-                            < tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                            < tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                                 {/* 01. Basic Information */}
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>SUP001</td>
                                 <td className='px-4 py-2 text-left font-medium border-white border-x-4'>Global Tech Supplies</td>

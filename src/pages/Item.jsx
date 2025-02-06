@@ -26,7 +26,7 @@ const Item = () => {
 
           {/* The Item Form Title */}
           <div className=' grid grid-cols-12 gap-1 h-12 fixed bg-white w-96 pb-5' style={{ zIndex : '1000' }}>
-                <div className='col-start-1 col-span-1 bg-orange-200 rounded-md w-6 h-12' ></div>
+                <div className='col-start-1 col-span-1 bg-green-200 rounded-md w-6 h-12' ></div>
                 <p className='col-start-2 col-span-9 align-middle text-3xl absolute font-bold' 
                 style={{ top : '6px' , bottom : '0px' }}
                     >ITEM</p>
@@ -505,7 +505,7 @@ const Item = () => {
       <div className='bg-white basis-2/3 p-1 overflow-x-auto scroll-smooth border-white' style={{ scrollbarWidth : '10px' }} >
           <div class="relative shadow-md sm:rounded-lg" >
               <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400' >
-                  <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 border-white' >
+                  <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-white' >
                     <tr>
                       <th colSpan='6' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Basic Information</th>
                       <th colSpan='6' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Stock & Inventory Information</th> 
@@ -555,7 +555,7 @@ const Item = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -594,7 +594,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -633,7 +633,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -672,7 +672,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -711,7 +711,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -750,7 +750,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
@@ -789,7 +789,7 @@ const Item = () => {
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>User Manual PDF</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Critical for core network infrastructure</td>
                     </tr>
-                    <tr className=' text-gray-800 font-thin odd:bg-gray-200 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    <tr className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
                         {/* 01. Basic Information */}
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR-2900</td>
                         <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
