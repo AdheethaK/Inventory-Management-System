@@ -155,7 +155,7 @@ const Employee = () => {
                               </label>
                             </div>
                             <div class="md:w-2/3">
-                              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assigned Items" />
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assigned Items" />
                               <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Assigned Items error label</p>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Serial Number (SKU)" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Serial Number (SKU)" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Item Serial Number (SKU) error label</p>
                             </div>
                         </div>
@@ -179,7 +179,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assignment Date" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assignment Date" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Assignment Date error label</p>
                             </div>
                         </div>
@@ -191,7 +191,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Return Date (If Applicable)" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Return Date (If Applicable)" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Return Date (If Applicable) error label</p>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Condition at Assignment" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Condition at Assignment" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Item Condition at Assignment error label</p>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Usage Purpose" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Usage Purpose" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Usage Purpose error label</p>
                             </div>
                         </div>
@@ -227,7 +227,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Approval Status" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Approval Status" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Approval Status error label</p>
                             </div>
                         </div>
@@ -239,7 +239,7 @@ const Employee = () => {
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Authorized By" />
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Authorized By" />
                             <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Authorized By error label</p>
                             </div>
                         </div>
@@ -406,7 +406,48 @@ const Employee = () => {
 
       {/* The Employee Table */}
       <div className='bg-white basis-2/3 p-1 overflow-x-auto scroll-smooth border-white' style={{ scrollbarWidth : '10px' }} >
+          <div class="relative shadow-md sm:rounded-lg" >
+              <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
+                <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-white'>
+                  <tr>
+                    <th colSpan='7' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Basic Information</th>
+                    <th colSpan='8' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Inventory Assignment & Responsibility Details</th>
+                    <th colSpan='3' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Accountability & Agreement </th>
+                    <th colSpan='2' className='px-6 py-4 text-center border-l-0 border-r-2 border-x-4 border-gray-300'>Additional Details</th>
+                  </tr>
+                  <tr className='sticky left-0 text-gray-500 font-thin border-white' style={{ fontSize : '11px' , lineHeight : '13px' }}>
+                    {/* Basic Information */}
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Employee ID</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Full Name</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Job Title / Designation</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Department</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Work Location</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Contact Number</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Email Address</th>
 
+                    {/* Inventory Assignment & Responsibility Details */}
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Assigned Items</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Item Serial Number / SKU</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Assignment Date</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Return Date (If Applicable)</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Item Condition at Assignment</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Usage Purpose</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Approval Status</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Authorized By</th>
+
+                    {/* Accountability & Agreement */}
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Liability Agreement Signed ?</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Loss / Damage Policy Acknowledged ?</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Remarks / Special Notes </th>
+
+                    {/* Additional Details */}
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Attachments</th>
+                    <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Last Updated By</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+          </div>
       </div>
     </div>
   )
