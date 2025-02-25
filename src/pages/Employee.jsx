@@ -14,16 +14,16 @@ import additional_logo from 'D:/My Projects/TELECOM/MINE/inventory_management/sr
 
 const Employee = () => {
   return (
-    <div className='flex flex-row gap-1 w-64' style={{ width : '1300px' ,  height : '640px' }} >
+    <div className='flex flex-row gap-1' style={{ width : '1300px' ,  height : '640px' }} >
       
       {/* The Employee Form */}
-      <div className=' basis-1/3 grid grid-cols-8 gap-0 overflow-x-auto scroll-smooth relative' >
+      <div className=' basis-2/5 grid grid-cols-8 gap-0 overflow-y-auto overflow-x-hidden scroll-smooth relative ' >
 
         {/* Form */}
         <div className='col-start-1 col-span-7 relative' >
 
           {/* The Employee Form Title */}
-          <div className=' grid grid-cols-12 gap-1 h-12 fixed bg-white w-96 pb-5' style={{ zIndex : '1000' }}>
+          <div className=' grid grid-cols-12 gap-1 h-12 fixed bg-white pb-5' style={{ zIndex : '1000' , width : '450px' }}>
           <div className='col-start-1 col-span-1 bg-sky-200 rounded-md w-6 h-12' ></div>
                 <p className='col-start-2 col-span-9 align-middle text-3xl absolute font-bold' 
                 style={{ top : '6px' , bottom : '0px' }}
@@ -33,7 +33,7 @@ const Employee = () => {
           </div>
 
           {/* The Employee Form Body */}
-          <div className='overflow-x-auto scroll-smooth relative top-12'>
+          <div className='overflow-x-auto w-full scroll-smooth relative top-12'>
               
               {/* Basic Information */}
               <div className='pb-0'>
@@ -45,90 +45,90 @@ const Employee = () => {
                   </div>
 
                   {/* Form */}
-                  <div className=' w-full pl-1'>
-                      <form class="w-full max-w-sm h-auto">
+                  <div className='pl-1'>
+                      <form class="w-96 max-w-sm h-auto">
                         {/* Employee Id */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5 mt-3">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Employee Id
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Employee Id" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Employee ID error label</p>
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Employee Id" style={{ width : "315px" }} />
+                              < p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Employee ID error label */}
                             </div>
                         </div>
                         {/* Full Name */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Full Name
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Full Name" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Full Name error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Full Name" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Full Name error label */}
                             </div>
                         </div>
                         {/* Job Title / Designation */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Job Title / Designation
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Job Title / Designation" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Job Title / Designation error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Job Title / Designation" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Job Title / Designation error label */}
                             </div>
                         </div>
                         {/* Department */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Department
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Department" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Department error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Department" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Department error label */}
                             </div>
                         </div>
                         {/* Work Location */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Work Location
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Work Location" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Work Location error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Work Location" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Work Location error label */}
                             </div>
                         </div>
                         {/* Contact Number */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Contact Number
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="tel" placeholder="Enter Contact Number" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Contact Number error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="tel" placeholder="Enter Contact Number" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Contact Number error label */}
                             </div>
                         </div>
                         {/* Email Address */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Email Address
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="email" placeholder="Enter Email Address" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Email Address error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="email" placeholder="Enter Email Address" style={{ width : "315px" }} />
+                            <p className='bg-white w-96 h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*  Email Address error label */}
                             </div>
                         </div>
                       </form>
@@ -148,99 +148,99 @@ const Employee = () => {
                   <div className=' w-full pl-1'>
                       <form class="w-full max-w-sm h-auto">
                         {/* Assigned Items */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5 mt-3">
                             <div class="md:w-1/3">
                               <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                   Assigned Items
                               </label>
                             </div>
                             <div class="md:w-2/3">
-                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assigned Items" />
-                              <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Assigned Items error label</p>
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assigned Items" style={{ width : "315px" }} />
+                              <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Assigned Items error label*/}
                             </div>
                         </div>
                         {/* Item Serial Number / SKU */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Item Serial Number / SKU
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Serial Number (SKU)" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Item Serial Number (SKU) error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Serial Number (SKU)" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Item Serial Number (SKU) error label*/}
                             </div>
                         </div>
                         {/* Assignment Date */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Assignment Date
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assignment Date" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Assignment Date error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Assignment Date" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Assignment Date error label*/}
                             </div>
                         </div>
                         {/* Return Date (If Applicable) */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Return Date (If Applicable)
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Return Date (If Applicable)" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Return Date (If Applicable) error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Return Date (If Applicable)" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Return Date (If Applicable) error labell*/}
                             </div>
                         </div>
                         {/* Item Condition at Assignment */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Item Condition at Assignment
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Condition at Assignment" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Item Condition at Assignment error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Item Condition at Assignment" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Item Condition at Assignment error label*/}
                             </div>
                         </div>
                         {/* Usage Purpose */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Usage Purpose
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Usage Purpose" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Usage Purpose error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Usage Purpose" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Usage Purpose error label*/}
                             </div>
                         </div>
                         {/* Approval Status */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Approval Status
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Approval Status" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Approval Status error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Approval Status" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Approval Status error label*/}
                             </div>
                         </div>
                         {/* Authorized By */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-1/3">
                             <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                 Authorized By
                             </label>
                             </div>
                             <div class="md:w-2/3">
-                            <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Authorized By" />
-                            <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Authorized By error label</p>
+                            <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Authorized By" style={{ width : "315px" }} />
+                            <p className='bg-white h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' , width : "315px" }} ></p>{/*Authorized By error label*/}
                             </div>
                         </div>
                       </form>
@@ -259,25 +259,25 @@ const Employee = () => {
                   <div className=' w-full pl-1'>
                       <form class="w-full max-w-sm h-auto">
                         {/* 01. Liability Agreement Signed ?  */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5 mt-4">
                             <div class="md:w-5/6 pl-6">
                               <label class="block text-gray-500 font-semibold md:text-left mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                   Liability Agreement Signed ? 
                               </label>
                             </div>
                             <div class="md:w-1/6">
-                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
                             </div>
                         </div>
                         {/* 02. Loss / Damage Policy Acknowledged ?  */}
-                        <div class="md:flex md:items-center mb-4">
+                        <div class="md:flex md:items-center mb-5">
                             <div class="md:w-5/6 pl-6">
                               <label class="block text-gray-500 font-semibold md:text-left mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                   Loss / Damage Policy Acknowledged ? 
                               </label>
                             </div>
                             <div class="md:w-1/6">
-                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
+                              <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-green-500 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="checkbox" placeholder="Enter Full Name" />
                             </div>
                         </div>
                         {/* 03. Remarks / Special Notes */}
@@ -288,8 +288,8 @@ const Employee = () => {
                                 </label>
                                 </div>
                                 <div class="md:w-2/3">
-                                    <textarea  rows="6"  class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Remarks / Special Notes" ></textarea>
-                                    <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Remarks / Special Notes error label</p>
+                                    <textarea  rows="8"  class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Remarks / Special Notes" style={{ width : "315px" }} ></textarea>
+                                    <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} ></p>{/*Remarks / Special Notes error label*/}
                                     {/* <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 text-sm" id="inline-full-name" type="text" placeholder="Enter Special Terms & Conditions" /> */}
                                 </div>
                             </div>
@@ -309,27 +309,27 @@ const Employee = () => {
                   <div className=' w-full pl-1'>
                       <form class="w-full max-w-sm h-auto">
                           {/* 01. Attachments */}
-                          <div class="md:flex md:items-center mb-4">
+                          <div class="md:flex md:items-center mb-5 mt-4">
                               <div class="md:w-1/3">
                                 <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Attachments
                                 </label>
                               </div>
                               <div class="md:w-2/3">
-                                <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Attachments" />
-                                <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Attachments error label</p>
+                                <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Attachments" style={{ width : "315px" }} />
+                                <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} ></p>{/*Attachments error label*/}
                               </div>
                           </div>
                           {/* 02. Last Updated By */}
-                          <div class="md:flex md:items-center mb-4">
+                          <div class="md:flex md:items-center mb-5">
                               <div class="md:w-1/3">
                                 <label class="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4 text-sm" for="inline-full-name">
                                     Last Updated By
                                 </label>
                               </div>
                               <div class="md:w-2/3">
-                                <input class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Last Updated By" />
-                                <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} >Last Updated By error label</p>
+                                <input class="bg-gray-100 appearance-none border-2 border-gray-100 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-300 text-sm" id="inline-full-name" type="text" placeholder="Enter Last Updated By" style={{ width : "315px" }} />
+                                <p className='bg-white w-full h-4 mb-0 text-red-500 italic text-left p-1 lowercase' style={{ fontSize : '10px' , lineHeight : '15px' }} ></p>{/*Last Updated By error label*/}
                               </div>
                           </div>
                       </form>
@@ -341,7 +341,7 @@ const Employee = () => {
         </div>
 
         {/* Button Section */}
-        <div className='col-start-8 fixed h-64 w-12 grid grid-rows-5 gap-2' style={{ left : '470px' , top : '400px' }}>
+        <div className='col-start-8 fixed h-64 w-12 grid grid-rows-5 gap-2' style={{ left : '555px' , top : '400px' }}>
 
             {/* Add New ID */}
             <div id='supplier-btn-new-id' onClick={()=> alert("Hello I am add-new-id-btn :)")} data-tooltip-target="tooltip-light-newId" data-tooltip-style="light" data-tooltip-placement="right" className='btn h-10 row-start-1 row-span-1 cursor-pointer hover:shadow-lg' style={{ backgroundColor : 'lightblue' , borderRadius : '10%' ,  border : '1px solid #2E2283' , boxShadow : '2.8px 2.8px 0 0 #2E2328' }} >
@@ -405,7 +405,7 @@ const Employee = () => {
       </div>
 
       {/* The Employee Table */}
-      <div className='bg-white basis-2/3 p-1 overflow-x-auto scroll-smooth border-white' style={{ scrollbarWidth : '10px' }} >
+      <div className='bg-white basis-3/5 p-1 overflow-x-auto scroll-smooth border-white' style={{ scrollbarWidth : '10px' }} >
           <div class="relative shadow-md sm:rounded-lg" >
               <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
                 <thead className='sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-white'>
@@ -445,7 +445,218 @@ const Employee = () => {
                     <th className='px-6 py-1 text-center font-thin border-r-2 border-gray-300'>Last Updated By</th>
                   </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                  <tr data-tooltip-target="tooltip-table-row" data-tooltip-style="light" data-tooltip-placement="bottom"  className=' text-gray-800 font-thin odd:bg-gray-100 cursor-pointer' style={{ fontSize : '12px' , lineHeight : '14px' }}>
+                    {/* 01. Basic Information */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>EMP1001</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Kasun Perera</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Network Engineer</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>IT</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Colombo Head Office</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>+94 71 234 5678</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>kasun.perera@company.com</td>
+
+                    {/* 02. Inventory Assignment & Responsibility Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Cisco Router 2900</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>CR2900-SN123456789</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>2024-01-15</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>N/A</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>New</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Internal Use</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Approved</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Nimal Fernando</td>
+
+                    {/* 03. Accountability & Agreement */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Yes</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Assigned for data center upgrade</td>
+
+                    {/* 04. Additional Details */}
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>Employee ID, Signed Agreement</td>
+                    <td className='px-4 py-2 text-left font-medium border-white border-x-2'>HR Admin</td>
+
+                  </tr>
+                </tbody>
               </table>
           </div>
       </div>
